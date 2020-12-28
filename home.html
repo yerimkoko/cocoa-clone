@@ -4,21 +4,29 @@
     <meta charset="UTF-8" />
     <style>
       body {
+        width: 50vh;
+        height: 100vh; /* vh = %와 같음*/
         margin: 20px;
+        display: flex;
+        justify-content: space-between; /* 가로 (main axis : 좌우) */
+        align-items: center; /*세로 (위 아래)*/
       }
       div {
-        display: inline-block;
         width: 300px;
         height: 300px;
         background-color: teal;
       }
+      #second {
+        background-color: wheat;
+      }
+      /*flexbox = 자식 엘리먼트 명시x 부모엘리먼트에서만 명시해야됨
+        flexbox에 대해 어떤것도 적지 않아도된다.
+      */
     </style>
   </head>
   <body>
     <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div id="second"></div>
     <div></div>
   </body>
 </html>
