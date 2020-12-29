@@ -8,27 +8,22 @@
         margin: 50px;
       }
       div {
-        width: 300px;
-        height: 300px;
+        width: 150px;
+        height: 150px;
         background-color: wheat;
-        /* position: absolute; */
-        /* position: static; 기본값임*/
       }
-      .green {
-        background-color: teal;
-        height: 100px;
-        position: absolute;
-        right: 0px;
-        width: 100px;
+      div:first-child {
+        background-color: tomato;
+      }
+      div:last-child {
+        background-color: thistle;
       }
     </style>
   </head>
   <body>
-    <div>
-      <div class="green"></div>
-    </div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
   </body>
 </html>
-<!-- position: static (기본값) 
-absolute:  relative 된 가장 가까운 부모를 찾는거이다. 아무것도 없으면 최상위 부모인 바디로 적용이 된다.
-relative를 기준으로 left, right, bottom을 설정하는 것이다. -->
