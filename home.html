@@ -4,35 +4,29 @@
     <meta charset="UTF-8" />
     <style>
       body {
-        width: 50vh;
-        height: 100vh; /* vh = %와 같음*/
+        height: 1000vh;
         margin: 20px;
-        display: flex;
-        justify-content: center; /* 가로 (main axis : 좌우) */
-        flex-direction: column; /*기본값을 row인데, column 으로 바꾸면 cross axis가 좌우가 되는거다.*/
-        align-items: center; /*세로 (위 아래)*/
-        flex-wrap: wrap; /*nowrap : 한줄에 하나씩만 나온다. wrap : 내려갈 수도 있다. 상황에 따라 달라짐.*/
       }
       div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        /* position: fixed; 고정시키기 */
         width: 300px;
         height: 300px;
-        font-size: 28;
-        background-color: teal;
+        color: white;
       }
-      #second {
+      #green {
+        background-color: teal;
+        position: fixed;
+        opacity: 0.2;
+      }
+      #different {
+        /* position: fixed; 초기에 지정된 자리에 있게함, top , left 등등 마진을 주면 위에 박스를 무시한다 */
+
         background-color: wheat;
       }
-      /*flexbox = 자식 엘리먼트 명시x 부모엘리먼트에서만 명시해야됨
-        flexbox에 대해 어떤것도 적지 않아도된다.
-      */
     </style>
   </head>
   <body>
-    <div>1</div>
-    <div id="second">2</div>
-    <div>3</div>
+    <div id="green"></div>
+    <div id="different"></div>
   </body>
 </html>
