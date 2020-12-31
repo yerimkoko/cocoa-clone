@@ -3,23 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <style>
+      :root {
+        --main-color: #fcce00;
+        --default-border: 1px solid var(--main-color);
+      }
       body {
         height: 1000vh;
         margin: 50px;
       }
-      input::placeholder {
-        color: yellowgreen;
+      p {
+        background-color: var(--main-color);
       }
-      p::selection {
-        padding: 20px;
-        color: white;
-        background-color: pink;
-      }
-
-      p::first-letter {
-        color: white;
-        font-size: 20px;
-        background-color: pink;
+      a {
+        color: var(--main-color);
+        border: var(--default-border);
       }
     </style>
   </head>
@@ -30,8 +27,5 @@
       asperiores enim qui! Mollitia, amet! Officia atque quibusdam reprehenderit
       quas? Quis.
     </p>
-    <form>
-      <input type="text" placeholder="Name" />
-    </form>
   </body>
 </html>
