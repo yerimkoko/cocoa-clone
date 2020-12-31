@@ -7,42 +7,31 @@
         height: 1000vh;
         margin: 50px;
       }
-      span {
-        background-color: yellowgreen;
-        padding: 5px;
-        border-radius: 20px;
-        /* text-decoration: underline; */
+      input::placeholder {
+        color: yellowgreen;
       }
-      a:visited {
-        color: teal;
-      }
-      a:hovor {
-        color: wheat;
-      }
-      input:focus {
-        background-color: teal;
-      }
-      form {
-        border: 1px solid salmon;
-        display: flex;
-        flex-direction: column;
+      p::selection {
         padding: 20px;
+        color: white;
+        background-color: pink;
       }
-      /* form:focus-within {
-        border-color: seagreen;
-        padding: 4px;
-      } */
-      form:hover input:hover {
+
+      p::first-letter {
+        color: white;
+        font-size: 20px;
         background-color: pink;
       }
     </style>
   </head>
   <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+      laborum veniam at est, molestias, maiores, atque sunt corporis corrupti
+      asperiores enim qui! Mollitia, amet! Officia atque quibusdam reprehenderit
+      quas? Quis.
+    </p>
     <form>
-      <input type="text" name="" id="" />
-      <input type="text" name="" id="" />
-      <input type="text" name="" id="" />
-      <a href="http://apple.com">Go to apple</a>
+      <input type="text" placeholder="Name" />
     </form>
   </body>
 </html>
